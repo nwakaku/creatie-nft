@@ -1,0 +1,216 @@
+.colletion-info-wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .banner-content {
+    position: relative;
+    width: 100vw;
+    height: calc(11.5vw + 60px);
+  }
+
+  .banner-wrapper {
+    width: 100vw;
+    height: 11.5vw;
+    position: absolute;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+  }
+
+  .avator {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    background: #fff;
+
+    img {
+      width: 110px;
+      margin: 5px;
+      border-radius: 50%;
+      box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+    }
+  }
+  .art-fork-info {
+    position: absolute;
+    bottom: 0px;
+    left: 20px;
+    display: flex;
+    column-gap: 10px;
+    .fork-info {
+      padding: 0px 34px;
+      height: 40px;
+      background: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #cdd2d9;
+      font-size: 14px;
+      font-family: Poppins-Medium, Poppins;
+      font-weight: 500;
+      color: #a6aeb7;
+      line-height: 40px;
+    }
+  }
+  .link-layout {
+    position: absolute;
+    bottom: 0px;
+    right: 20px;
+    display: flex;
+    column-gap: 10px;
+
+    .link {
+      display: flex;
+      border: 1px solid #cdd2d9;
+      border-radius: 8px;
+      height: 40px;
+      align-items: center;
+      a {
+        display: flex;
+        padding: 0px 14px;
+        &:not(a:last-child) {
+          border-right: 1px solid #cdd2d9;
+        }
+        &:hover {
+          path {
+            fill: #333;
+          }
+        }
+      }
+    }
+  }
+
+  .create-ad-icon {
+    position: absolute;
+    top: calc(100% + 20px);
+    left: 20px;
+    width: 80px;
+    height: 120px;
+    background: #ffffff;
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    img {
+      width: 80px;
+      height: 80px;
+    }
+    span {
+      font-size: 14px;
+      font-family: Poppins-SemiBold, Poppins;
+      font-weight: 600;
+      color: #000000;
+      line-height: 40px;
+      margin: 0 auto;
+    }
+  }
+
+  .listing-info {
+    width: 1020px;
+    height: 90px;
+    max-width: 98%;
+    display: flex;
+    margin: 20px;
+    border-radius: 6px;
+    align-items: center;
+    border: 1px solid #cdd2d9;
+    > :not(:last-child) {
+      border-right: 1px solid #cdd2d9;
+    }
+  }
+
+  .vertical-center {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .value {
+      font-weight: 500;
+    }
+  }
+
+  .nft-blurb {
+    max-width: 1020px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h2 {
+      font-size: 30px;
+      font-family: Poppins-SemiBold, Poppins;
+      font-weight: 600;
+      color: #000000;
+    }
+  }
+  .stake-btn {
+    width: 155px;
+    height: 40px;
+    font-size: 14px;
+    font-family: Poppins-SemiBold, Poppins;
+    font-weight: 600;
+    color: #ffffff;
+    line-height: 23px;
+    background: linear-gradient(232deg, #4338ca 0%, #000000 100%);
+    box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 8px !important;
+    &:hover {
+      color: #fff !important;
+      box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15) !important;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    .link {
+      right: 2vw;
+      padding: 2px 0px;
+    }
+    .banner-content {
+      height: calc(11.5vw + 30px);
+    }
+    .avator {
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%);
+      height: 60px;
+      width: 60px;
+      border-radius: 50%;
+      background: #fff;
+
+      img {
+        width: 50px;
+        margin: 5px;
+        border-radius: 50%;
+        box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 10%);
+      }
+    }
+    .listing-info {
+      width: 98%;
+      height: 180px;
+      display: flex;
+      flex-wrap: wrap;
+      margin: 20px 1%;
+      > :not(:last-child) {
+        border: none;
+      }
+      > :nth-child(-n + 3):nth-child(n + 1) {
+        border-bottom: 1px solid #cdd2d9;
+      }
+      > :nth-child(-n + 2):nth-child(n + 1) {
+        border-right: 1px solid #cdd2d9;
+      }
+      > :nth-child(-n + 5):nth-child(n + 4) {
+        border-right: 1px solid #cdd2d9;
+      }
+    }
+    .vertical-center {
+      flex: 33.3%;
+      height: 90px;
+    }
+  }
+}

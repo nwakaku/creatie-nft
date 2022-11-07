@@ -1,0 +1,76 @@
+.canvas-thv-wrapper {
+  width: 100%;
+  position: relative;
+  height: fit-content;
+  background: #ffffff;
+  box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.15);
+  border-radius: 20px;
+  overflow: hidden;
+
+  .canvas-pixel {
+    width: 100%;
+    padding: 100% 0 0;
+    margin: 0px auto;
+    overflow-x: clip;
+    overflow-y: clip;
+    position: relative;
+  }
+
+  .heatmap {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    overflow-x: clip;
+    overflow-y: clip;
+  }
+  .thumb-list {
+    width: 100%;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    padding: 0px 10px;
+
+    .select-frame {
+      width: 102px;
+      height: 102px;
+      border-radius: 10px;
+      border: 1px solid #a6aeb7;
+      padding: 5px;
+    }
+
+    .empty-frame {
+      width: 102px;
+      height: 102px;
+      border-radius: 10px;
+      border: none;
+      padding: 5px;
+    }
+
+    .canvas-parent {
+      width: 92px;
+      height: 92px;
+      position: relative;
+      border-radius: 6px;
+      overflow: hidden;
+      img {
+        left: 50%;
+        top: 50%;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+    }
+
+    .heatmap-thumb {
+      width: 92px;
+      height: 92px;
+      border-radius: 6px;
+      overflow: hidden;
+      .thumb {
+        width: fit-content;
+        height: fit-content;
+        transform-origin: left top;
+      }
+    }
+  }
+}

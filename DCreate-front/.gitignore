@@ -1,0 +1,12 @@
+node_modules
+.dfx/
+dist/
+build/
+.idea/
+package-lock.json
+src/server/local/id.js
+dfx.json
+init.sh
+canister_ids.json
+.DS_Store
+yarn.lock

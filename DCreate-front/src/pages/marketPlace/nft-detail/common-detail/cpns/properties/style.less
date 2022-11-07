@@ -1,0 +1,96 @@
+@import '@/assets/style/var.less';
+
+.properties {
+  width: 100%;
+  .box-shadow {
+    border-radius: 10px;
+    border: 1px solid #cdd2d9;
+    background: #fff;
+  }
+  .zombie-attr-summarize {
+    width: 100%;
+    background: #cdd2d9;
+    border-radius: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    dl {
+      padding: 12px 0px;
+      flex: 1;
+      text-align: center;
+      margin-bottom: 0px;
+      dt {
+        font-size: 14px;
+        font-family: Poppins-Medium, Poppins;
+        font-weight: 500;
+        color: #6d7278;
+        line-height: 23px;
+        margin-bottom: 0px;
+      }
+      dd {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 16px;
+        font-family: Poppins-SemiBold, Poppins;
+        font-weight: 600;
+        color: #000000;
+        line-height: 26px;
+        margin-bottom: 0px;
+      }
+      // dd:nth-child(2) {
+      // }
+      // dd:nth-child(3) {
+      // }
+    }
+  }
+
+  .ant-collapse-header {
+    height: 80px;
+    display: flex !important;
+    align-items: center !important;
+  }
+
+  .ant-collapse-content-box {
+    border-top: 1px solid #cdd2d9;
+    padding: 40px !important;
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 100%;
+    dl {
+      width: calc(50% - 5px);
+      text-align: center;
+      background: #edeef0;
+      border-radius: 10px;
+      margin-bottom: 0px;
+      padding: 12px 0px;
+      dt {
+        font-size: 14px;
+        font-family: Poppins-Medium, Poppins;
+        font-weight: 500;
+        color: #6d7278;
+        line-height: 23px;
+        margin-bottom: 0px;
+      }
+      dd {
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        font-size: 16px;
+        font-family: Poppins-SemiBold, Poppins;
+        font-weight: 600;
+        color: #000000;
+        line-height: 26px;
+        margin-bottom: 0px;
+      }
+      // dd:nth-child(2) {
+      // }
+      // dd:nth-child(3) {
+      // }
+    }
+  }
+}

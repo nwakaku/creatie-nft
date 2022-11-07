@@ -1,0 +1,104 @@
+.sell-detail-wrapper {
+  width: 100vw;
+  height: 100%;
+  top: 0;
+  min-height: 100%;
+  background: #fff;
+
+  .sell-top-title-wrapper {
+    width: 100%;
+    height: 70px;
+    border-bottom: 1px solid #c1c1c1;
+    display: flex;
+
+    .go-back {
+      width: 100%;
+      display: flex;
+      max-width: 1080px;
+      margin: auto auto;
+      column-gap: 10px;
+      align-items: center;
+
+      span {
+        font-size: 16px;
+        font-family: Poppins-Medium, Poppins;
+        font-weight: 500;
+        color: #a6aeb7;
+        line-height: 26px;
+      }
+    }
+  }
+  .sell-content-wrapper {
+    width: 100%;
+    max-width: 1140px;
+    margin: 30px auto;
+    display: flex;
+    flex-wrap: nowrap;
+    column-gap: 20px;
+    justify-content: space-between;
+    padding: 30px;
+    overflow: hidden;
+
+    .float-right {
+      display: flex;
+      column-gap: 10px;
+      flex-direction: row-reverse;
+    }
+    .sell-detail-left {
+      flex: 1;
+      width: 98%;
+
+      .white-bg {
+        width: 120px;
+        display: flex;
+        column-gap: 10px;
+        align-items: center;
+        justify-content: center;
+        background: #ffffff;
+        border: 1px solid #cdd2d9;
+        border-radius: 4px;
+      }
+
+      .line {
+        width: 100%;
+        margin: 20px 0;
+        height: 1px;
+        border-bottom: 1px solid #c1c1c1;
+      }
+    }
+    .sell-detail-right {
+      width: 484px;
+      max-width: 98%;
+      margin: auto;
+
+      .pixel-content {
+        width: 98%;
+        margin-top: 12px;
+        padding-bottom: 5px;
+        position: relative;
+        background: #ffffff;
+        border-radius: 10px;
+        box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.08);
+
+        .canvas-pixel {
+          width: 100%;
+          padding: 100% 0 0;
+          margin: 0px auto;
+          border-radius: 10px 10px 0 0;
+          overflow-x: clip;
+          overflow-y: clip;
+          position: relative;
+        }
+        .info {
+          margin: 5px 10px;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+        }
+      }
+      @media screen and (max-width: 1152px) {
+        display: none;
+      }
+    }
+  }
+}
