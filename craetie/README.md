@@ -14,14 +14,12 @@ To learn more before you start working with swap, see the following documentatio
 If you want to start working on your project right away, you might want to try the following commands:
 
 ```bash
-cd DCreate-front/
+cd Craetie-/
 dfx help
 dfx config --help
 ```
 
-
-canister_ids.json 是保存生成的canister id
+canister_ids.json 是保存生成的 canister id
 所有后端运行的罐子放在 allids.js 中 分别对应线上环境的后端的罐子 id
-
 
 ./init.sh test 部署线上测试环境

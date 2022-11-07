@@ -45,7 +45,7 @@ const NFTContent = (props) => {
             placement="bottomLeft"
             overlayInnerStyle={{ width: '350px' }}
             title={
-              'Disclaimer: NFT trading has a high level of market risk. Please trade carefully. Please note that Dcreate is not responsible for your trading losses.The Dcreate Marketplace API and integration are open source, and any Dfinity project can use them. Dcreate thoroughly evaluates all projects that request for a listing; however, Dcreate cannot be held liable if a third-party project ceases to exist, disappears with assets, or pulls the rug out from under its community. Always do your research before investing any money. Thank you for your cooperation.'
+              'Disclaimer: NFT trading has a high level of market risk. Please trade carefully. Please note that Creatie is not responsible for your trading losses.The Creatie Marketplace API and integration are open source, and any Dfinity project can use them. Creatie thoroughly evaluates all projects that request for a listing; however, Creatie cannot be held liable if a third-party project ceases to exist, disappears with assets, or pulls the rug out from under its community. Always do your research before investing any money. Thank you for your cooperation.'
             }
           >
             {Warning}

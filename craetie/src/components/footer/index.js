@@ -23,7 +23,7 @@ const Footer = React.memo((props) => {
     <div className="footer-wrapper">
       <div className="content-left">
         <img alt="" className="title" src={Logo}></img>
-        <p>Dcreate is a Decentralized creation platform. It allows anyone to create, design, customize and trade artworks on-chain.</p>
+        <p>Creatie is a Decentralized creation platform. It allows anyone to create, design, customize and trade artworks on-chain.</p>
         <div className="list">
           {link.map((item, index) => {
             return (
